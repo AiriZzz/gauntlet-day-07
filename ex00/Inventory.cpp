@@ -16,7 +16,7 @@ bool Inventory::has(const std::string& item)const{
     {
         if(item == target )
         {
-           return false;
+           return true;
         }
     }
     return false;
