@@ -21,3 +21,8 @@ bool Inventory::has(const std::string& item)const{
     }
     return false;
 }
+
+void Inventory::remove(const std::string& item){
+    
+    std::string target = item;
+}
