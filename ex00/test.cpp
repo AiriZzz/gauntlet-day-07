@@ -11,7 +11,8 @@ TEST_CASE("adding an item raises the count") {
 
 TEST_CASE("finds an added item and rejects a missing one") {
     Inventory inv;
-    REQUIRE(inv.count()==0);
-    CHECK(inv.has("head"));
+    inv.add("potion");
+    CHECK(inv.has("potion"));
+    CHECK_FALSE(inv.has("head"));    
 }
 
