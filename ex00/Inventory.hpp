@@ -3,10 +3,10 @@
 #include <vector>
 
 class Inventory {
-    public:
-      void add(const std::string& item){m_items.push_back(item);};
-      int count()const{return 0;};
-    
-    private:
+public:
+    void add(const std::string& item);
+    int  count() const;
+
+private:
     std::vector<std::string> m_items;
 };

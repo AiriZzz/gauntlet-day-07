@@ -6,7 +6,7 @@ CXX      := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++17
 
 # List every .cpp file in the exercise here
-SRCS := test.cpp catch_amalgamated.cpp
+SRCS := test.cpp Inventory.cpp catch_amalgamated.cpp
 OBJS := $(SRCS:.cpp=.o)
 
 # `make` / `make all`: build the binary

@@ -5,7 +5,6 @@
 
 TEST_CASE("adding an item raises the count") {
     Inventory inv;
-    std::string potion = "potion";
-    inv.add(potion);
+    inv.add("potion");
     CHECK(inv.count() == 1);
 }
