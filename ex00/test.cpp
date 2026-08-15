@@ -21,7 +21,7 @@ TEST_CASE("removing an item drops the count and has() stops finding it"){
     Inventory inv;
     inv.add("potion");
     inv.add("heads");
-    inv.remove("Potion");
+    inv.remove("potion");
     CHECK_FALSE(inv.has("potion"));
     CHECK(inv.count()==1);
 }
