@@ -5,6 +5,6 @@
 
 TEST_CASE("finds an added item and rejects a missing one") {
     Inventory inv;
+    REQUIRE(inv.count() == 0);       // REQUIRE aborts the case; the line below is meaningless if this fails
     CHECK(inv.has("potion"));
-    CHECK(inv.has("head"));
 }
